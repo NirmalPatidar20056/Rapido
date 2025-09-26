@@ -1,0 +1,994 @@
+*{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* header tag css */
+
+        header{
+            width: 100vw;
+            height: 80px;
+            background-color:white;
+            border-bottom: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .head{
+            width: 85%;
+            max-width: 85%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        img{
+            width:100%;
+            height: 100%;
+            border-radius: 50px;
+        }
+        .rapido{
+            width: 120px;
+            height: 50px;
+        }
+        nav{
+            width: 580px;
+            max-width: 580px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        nav a{
+            text-decoration: none;
+            color: rgb(18, 17, 17);
+            font:510 1.30em sans-serif;
+            letter-spacing:0.50px;
+        }
+        input[type="checkbox"]{
+          display: none;
+        }
+        .btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+       }
+       .adit{
+        color: rgba(0, 0, 0, 0.789);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .span{
+        text-decoration: underline;
+        font:700 14px sans-serif ;
+        letter-spacing: 0.10px;
+       }
+       i{
+        padding: 0 15px;
+        font-size: 20px;
+       }
+       .hide{
+        display: none;
+        max-width: 250px;
+        height: 500px;
+        background-color: white;
+        box-shadow: 0 0 5px grey;
+        position: absolute;
+        right: -250px;
+        top: 80px;
+        transition:  0.8s ease;
+        }
+       li{
+        list-style: none;
+        border-bottom:1px solid silver;
+        padding: 20px 10px;
+        font:500 12px arial;
+       }
+       ul li:nth-child(5)
+       {
+        border-bottom: none;
+       }
+
+        /* main tag css */
+       .menimage{
+        min-width: 100vw;
+        min-height:550px ;
+        background-image:url(assts/rapido);
+        background-position: center center;
+        padding: 24px;
+       }
+       .menimage img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+       }
+       .searchbarcontainer{
+        min-width: 80%;
+        height: 450px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+       }
+       h1{
+        font:bold 3rem arial;
+        color: rgba(0, 0, 0, 0.834);
+        word-spacing: 5px;
+       }
+       .search{
+        min-width:48%;
+        height: auto;
+       }
+       .mark{
+         border: 1px solid grey;
+         width: 100%;
+         height: 70px;
+         margin: 25px 0;
+         border-radius: 10px;
+         background-color: white;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+       }
+       .btn{
+         border: 1px solid silver;
+         min-width: 100%;
+         height: 70px;
+         margin-top: 5%;
+         border-radius: 10px;
+         background-color:#f7ca19;
+         border: none;
+         font:bold 1.80em sans-serif;
+       }
+       .mark i{
+        width: 80px;
+        font-size:1.70em;
+       }
+       .mark .abc{
+        width: 90%;
+        padding: 10px 0;
+        font-size: 20px;
+        border: none;
+        outline: none;
+       }
+
+       .sevenimage{
+        max-width: 75%;
+        margin:2.50% auto;
+       }
+       .gold{
+        border-bottom:3px solid #f7ca19;
+        width: 80px;
+        padding: 6px 0;
+       }
+       .seven{
+        width:100%;
+        height: auto;
+        margin: 3% 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit ,minmax(130px,1fr));
+        grid-auto-rows: 130px;
+        column-gap: 120px;
+        row-gap: 60px;
+        padding: 10px;
+       }
+       .our{
+        object-fit: cover;
+       }
+       .our span{
+        padding: 10% 0px;
+        font:500 1.20em arial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .book{
+        width: 100vw;
+        margin:5% auto;
+        padding:5% 0;
+        background-color: #f6f7f9;
+       }
+       .books{
+        max-width: 75%;
+        margin: auto;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+       }
+       .bookes{
+        max-width: 75%;
+        margin: auto;
+        margin-top: 10%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+       }
+       .left{
+        min-width: 48%;
+        height: auto;
+        text-align: left ;
+        padding: 2% 15px;
+       }
+       .left p {
+        padding: 9% 0;
+        color: rgba(0, 0, 0, 0.774);
+        font-size: 1.80em;
+        font-family: Arial;
+        line-height: 140%;
+       }
+       .left button{
+        padding: 13px 5%;
+        font: 500 1.80em arial;
+        background-color: black;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+       }
+       .left .blue{
+        background-color: white;
+        color: rgb(30, 75, 130);
+        font-weight: 700;
+        cursor: pointer;
+        padding: 0;
+       }
+       .right{
+        min-width: 45%;
+        height: 450px;
+       }
+
+
+       .black{
+        max-width: 100vw;
+        height: auto;
+        background-color:black;
+        margin: 2% 0;
+        padding: 2% 10px;
+       }
+       .datas{
+        max-width:70%;
+        margin: auto;
+       }
+       .datas h1{
+        text-align: center;
+        color: white;
+       }
+       .datas .gold{
+       width: 100px;
+       margin: auto;
+       }
+       .twoimage{
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        padding-top: 7%;
+       }
+       .lft{
+        width: 100px;
+        height: 90px;
+        background-color:#f7ca19;
+        border-radius: 10px;
+       }
+       .rit{
+        width: 100px;
+        height: 90px;
+        background-color:white;
+        border-radius: 10px;
+       }
+       .twop{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        max-width: 85%;
+        margin: auto;
+       }
+       .twop p{
+        color: #fff;
+        font: 500 1.50em arial;
+        line-height: 40px;
+        text-align: center;
+        padding: 2% 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+
+
+       .threes{
+       border-top: 1px solid silver;
+       border-bottom: 1px solid silver;
+       max-width: 100vw;
+       padding: 3% 0;
+       margin: 3% 0;
+       }
+       .threedost{
+        max-width: 30%;
+        margin: auto;
+        height: 100px;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+       }
+       .threedost .x{
+        width: 180px;
+        height: 120px;
+       }
+
+       /* footer css */
+       .foot{
+        max-width: 85%;
+        height: auto;
+        margin: auto;
+       }
+       .data{
+        max-width: 45%;
+        height: 350px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 2%;
+       }
+       .home{
+        max-width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: left;
+        flex-direction: column;
+       }
+        .second{
+        max-width: 70%;
+        height: 70%;
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+       }
+       a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.774);
+        padding: 6px 0;
+        font: 500 1.50em sans-serif;
+       }
+       .dlast{
+        max-width: 80%;
+        margin: auto;
+        border-top: 1px solid silver;
+        padding: 2% 8%;
+       }
+       .dlast p{
+        color: rgba(0, 0, 0, 0.774);
+        font: 500 1em sans-serif;
+       }
+
+       /* none css */
+       .booki,.booksi,.btns{
+        display: none;
+       }
+       .vixit{
+        visibility: hidden;
+       }
+       #close{
+        display: none;
+       }
+       ::-webkit-scrollbar{
+        display: none;
+       }
+
+       /* media queries code */
+
+       @media screen and (max-width:449px){
+        header{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+        position: sticky;
+        height: 65px;
+       }
+        nav{
+        display: none;
+       }
+       .rapido{
+            width: 80px;
+            height: 30px;
+        }
+        h1{
+        font:bold 1.80rem arial;
+        color: rgba(0, 0, 0, 0.834);
+        word-spacing: 5px;
+        text-align: center;
+        line-height: 35px;
+       }
+       .head{
+        min-width: 90%;
+       }
+       .btns{
+        display: block;
+       }
+       #open:checked ~ .hide{
+        display: block;
+        right: 0;
+       }
+
+
+       .menimage{
+        min-height:300px ;
+       }
+        .searchbarcontainer{
+        min-width: 80%;
+        height: 300px;
+       }
+       .search{
+        min-width:100%;
+        height: auto;
+       }
+       .mark{
+         border: 1px solid grey;
+         width: 100%;
+         height: 45px;
+         margin: 7px 0;
+         border-radius: 10px;
+         background-color: white;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+       }
+       .btn{
+         border: 1px solid silver;
+         min-width: 100%;
+         height: 45px;
+         margin-top: 4%;
+         border-radius: 10px;
+         background-color:#f7ca19;
+         border: none;
+         font:bold 16px sans-serif;
+       }
+       .mark i{
+        width: 50px;
+        font-size:1em;
+       }
+       .mark .abc{
+        width: 95%;
+        padding: 5px 0;
+        font-size:16px;
+        border: none;
+        outline: none;
+       }
+
+       .sevenimage{
+        max-width: 85%;
+        margin:2.50% auto;
+       }
+       .seven{
+        grid-template-columns: repeat(auto-fit ,minmax(110px,1fr));
+        grid-auto-rows: 100px;
+        column-gap: 30px;
+       }
+       .our span{
+        padding: 5% 0px;
+        font:500 1.10em arial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .sevenimage h1{
+        font:bold 1.50rem arial;
+       }
+       .gold{
+        width: 70px;
+        margin: auto;
+        padding: 3px 0;
+       }
+
+       .book{
+        display: none;
+       }
+       .books{
+        display: none;
+       }
+       .booki{
+        max-width: 100vw;
+        height: auto;
+        margin:2% auto;
+        margin-top: 15%;
+        display: block;
+        padding: 1% 0;
+        background-color: #f6f7f9;
+       }
+       .booksi{
+        max-width: 90%;
+        height: auto;
+        margin:0% auto;
+        padding: 1%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+       }
+       .bookesi{
+        max-width: 90%;
+        margin: auto;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+       }
+       .lefti h1{
+        font:bold 1.20rem arial;
+        color: rgba(0, 0, 0, 0.834);
+        word-spacing: 0px;
+       }
+       .lefti{
+        min-width: 100%;
+        height: auto;
+        text-align: left ;
+        padding: 5% 5px;
+       }
+       .lefti p {
+        padding: 5% 0;
+        color: rgba(0, 0, 0, 0.774);
+        font-size: 16px;
+        font-family: Arial;
+        line-height: 140%;
+       }
+       .lefti button{
+        padding: 10px 5%;
+        font: 500 1em arial;
+        background-color: black;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+       }
+       .lefti .blue{
+        background-color: white;
+        color: rgb(30, 75, 130);
+        font-weight: 700;
+        cursor: pointer;
+        padding: 0;
+       }
+       .righti{
+        min-width: 50%;
+        height: 300px;
+        margin:2% auto;
+        padding: 10px;
+       }
+
+
+       .black{
+        margin: 2% 0;
+        padding: 5% 10px;
+       }
+        .datas{
+        max-width:80%;
+        margin: auto;
+       }
+       .datas h1{
+        text-align: center;
+        color: white;
+        font-size: x-large;
+       }
+       .datas .gold{
+       width: 50px;
+       margin: auto;
+       }
+       .twoimage{
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        justify-content:space-around;
+        text-align: center;
+        padding:5%;
+       }
+       .lft{
+        width: 50px;
+        height: 50px;
+        background-color:#f7ca19;
+        border-radius: 10px;
+       }
+       .rit{
+        width: 50px;
+        height: 50px;
+        background-color:white;
+        border-radius: 10px;
+       }
+       .twop{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        min-width: 90%;
+       }
+       .twop p{
+        color: #fff;
+        font: 400 14px arial;
+        text-align: center;
+       }
+
+
+       .threes{
+       padding: 1% 0;
+       margin: 7% 0;
+       }
+       .threedost{
+        max-width: 55%;
+        height: auto;
+        justify-content: space-around;
+       }
+       .threedost .x{
+        width: 50px;
+        height: 80px;
+       }
+
+       .foot{
+        max-width: 85%;
+        height: auto;
+        margin: auto;
+       }
+       .data{
+        max-width: 90%;
+        height: auto;
+        margin: 2% 2%;
+       }
+       a{
+        font: 500 12px sans-serif;
+       }
+       .vixit{
+        visibility: hidden;
+       }
+       .dlast p{
+        font:400 9px sans-serif;
+       }
+       }
+
+
+      @media screen and (min-width:450px) and  (max-width:770px){
+       header{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+        position: sticky;
+        height: 65px;
+       }
+        nav{
+        display: none;
+       }
+       .rapido{
+            width: 90px;
+            height: 35px;
+        }
+        h1{
+        font:bold 1.80rem arial;
+        color: rgba(0, 0, 0, 0.834);
+        word-spacing: 5px;
+       }
+       .head{
+        min-width: 90%;
+       }
+       .btns{
+        display: block;
+       }
+        #open:checked ~ .hide{
+        display: block;
+        right: 0;
+       }
+
+
+
+       .menimage{
+        min-height:300px ;
+       }
+        .searchbarcontainer{
+        min-width: 80%;
+        height: 300px;
+       }
+       .search{
+        min-width:100%;
+        height: auto;
+       }
+       .mark{
+         border: 1px solid grey;
+         width: 100%;
+         height: 45px;
+         margin: 7px 0;
+         border-radius: 10px;
+         background-color: white;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+       }
+       .btn{
+         border: 1px solid silver;
+         min-width: 100%;
+         height: 45px;
+         margin-top: 4%;
+         border-radius: 10px;
+         background-color:#f7ca19;
+         border: none;
+         font:bold 1.20em sans-serif;
+       }
+       .mark i{
+        width: 80px;
+        font-size:1.20em;
+       }
+       .mark .abc{
+        width: 90%;
+        padding: 5px 0;
+        font-size:16px;
+        border: none;
+        outline: none;
+       }
+
+
+       .sevenimage{
+        max-width: 85%;
+        margin:2.50% auto;
+       }
+       .seven{
+        grid-template-columns: repeat(auto-fit ,minmax(120px,1fr));
+        grid-auto-rows: 120px;
+        column-gap: 80px;
+       }
+       .our span{
+        padding: 5% 0px;
+        font:500 1.10em arial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+
+
+       .book{
+        display: none;
+       }
+       .books{
+        display: none;
+       }
+
+       .booki{
+        max-width: 100vw;
+        height: auto;
+        margin:2% auto;
+        margin-top: 10%;
+        display: block;
+        padding: 1% 0;
+        background-color: #f6f7f9;
+       }
+       .booksi{
+        max-width: 90%;
+        height: auto;
+        margin:0% auto;
+        padding: 1%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+       }
+       .bookesi{
+        max-width: 90%;
+        margin: auto;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+       }
+       .lefti h1{
+        font:bold 1.50rem arial;
+        color: rgba(0, 0, 0, 0.834);
+        word-spacing: 0px;
+       }
+       .lefti{
+        min-width: 100%;
+        height: auto;
+        text-align: left ;
+        padding: 5% 5px;
+       }
+       .lefti p {
+        padding: 5% 0;
+        color: rgba(0, 0, 0, 0.774);
+        font-size: 16px;
+        font-family: Arial;
+        line-height: 140%;
+       }
+       .lefti button{
+        padding: 10px 5%;
+        font: 500 1em arial;
+        background-color: black;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+       }
+       .lefti .blue{
+        background-color: white;
+        color: rgb(30, 75, 130);
+        font-weight: 700;
+        cursor: pointer;
+        padding: 0;
+       }
+       .righti{
+        min-width: 50%;
+        height: 350px;
+        margin:2% auto;
+        padding: 10px;
+       }
+
+
+       .black{
+        margin: 2% 0;
+        padding: 5% 10px;
+       }
+        .datas{
+        max-width:80%;
+        margin: auto;
+       }
+       .datas h1{
+        text-align: center;
+        color: white;
+        font-size: x-large;
+       }
+       .datas .gold{
+       width: 50px;
+       margin: auto;
+       }
+       .twoimage{
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        justify-content:space-around;
+        text-align: center;
+        padding:5%;
+       }
+       .lft{
+        width: 80px;
+        height: 70px;
+        background-color:#f7ca19;
+        border-radius: 10px;
+       }
+       .rit{
+        width: 80px;
+        height: 70px;
+        background-color:white;
+        border-radius: 10px;
+       }
+       .twop{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        min-width: 90%;
+       }
+       .twop p{
+        color: #fff;
+        font: 400 14px arial;
+        text-align: center;
+       }
+
+
+       .threes{
+       padding: 2% 0;
+       margin: 7% 0;
+       }
+       .threedost{
+        max-width: 55%;
+        height: auto;
+        justify-content: space-around;
+       }
+       .threedost .x{
+        width: 50px;
+        height: 80px;
+       }
+
+       .foot{
+        max-width: 85%;
+        height: auto;
+        margin: auto;
+       }
+       .data{
+        max-width: 75%;
+        height: auto;
+        margin: 2% 2%;
+       }
+       a{
+        font: 500 13px sans-serif;
+       }
+       .vixit{
+        visibility: hidden;
+       }
+       .dlast p{
+        font:400 12px sans-serif;
+       }
+
+      }
+      @media screen and (min-width:771px) and  (max-width:1250px){
+        .head{
+            width: 90%;
+            max-width: 90%;
+        }
+        .rapido{
+            width: 120px;
+            height: 45px;
+        }
+        nav{
+            justify-content: space-evenly;
+        }
+        nav a{
+            font:510 1.20em sans-serif;
+        }
+
+        /* main tag css */
+       .searchbarcontainer{
+        height: 500px;
+       }
+        h1{
+        font:bold 3rem arial;
+       }
+       .search{
+        width: 80%;
+       }
+       .mark{
+         height: 75px;
+         margin: 20px 0;
+       }
+       .btn{
+         height: 75px;
+       }
+       
+
+       .our span{
+        padding: 5% 0px;
+        font:500 1.20em arial ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+
+       .books{
+        max-width: 80%;
+       }
+       .bookes{
+        max-width: 80%;
+       }
+       .left{
+        min-width: 40%;
+        height: auto;
+       }
+       .left p {
+        font-size: 1.60em;
+       }
+       .left button{
+        font: 500 1.50em arial;
+       }
+       .right{
+        min-width: 60%;
+        height: 450px;
+       }
+
+       .datas{
+        max-width:80%;
+        margin: auto;
+       }
+      
+
+       .threes{
+       padding: 2% 0;
+       margin: 4% 0;
+       }
+
+       /* footer css */
+       .data{
+        max-width: 60%;
+       }
+       a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.774);
+        padding: 6px 0;
+        font: 500 1.20em sans-serif;
+       }
+       .dlast p{
+        color: rgba(0, 0, 0, 0.774);
+        font: 500 15px sans-serif;
+       }
+
+
+      }
